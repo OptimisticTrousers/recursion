@@ -16,16 +16,14 @@ function fibs(number) {
   return output;
 }
 
-// function fibonacci(number) {
-//   if (number <= 0) {
-//     return 0;
-//   } else if ((number === 2) | (number === 1)) {
-//     return 1;
-//   }
+function fibsRec(number) {
+  if (number === 1) {
+    return 0;
+  } else if (number === 2) {
+    return 1;
+  }
 
-//   return fibonacci(number - 1) + fibonacci(number - 2);
-// }
+  return fibsRec(number - 1) + fibsRec(number - 2);
+}
 
-// console.log(fibonacci(9));
-
-console.log(`fibs(8): ${fibs(8)}`);
+console.log(`fibs(8): ${fibsRec(8)}`);
