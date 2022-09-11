@@ -33,9 +33,9 @@ function merge(array, firstHalf, secondHalf) {
     firstIndex++;
   }
 
-  while (secondIndex < secondHalf.length) {
-    array[arrayIndex] = secondHalf[secondIndex];
-    arrayIndex++;
+  while(secondIndex < secondHalf.length) {
+    array[arrayIndex] = secondHalf[secondIndex]
+    arrayIndex++
     secondIndex++;
   }
 }
