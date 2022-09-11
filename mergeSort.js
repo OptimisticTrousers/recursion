@@ -5,6 +5,7 @@ function mergeSort(array) {
 
   const firstHalf = array.slice(0, array.length / 2);
   const secondHalf = array.slice(array.length / 2);
+
   mergeSort(firstHalf);
   mergeSort(secondHalf);
   merge(array, firstHalf, secondHalf);
@@ -28,14 +29,14 @@ function merge(array, firstHalf, secondHalf) {
 
   while (firstIndex < firstHalf.length) {
     array[arrayIndex] = firstHalf[firstIndex];
-    firstIndex++;
     arrayIndex++;
+    firstIndex++;
   }
 
   while (secondIndex < secondHalf.length) {
     array[arrayIndex] = secondHalf[secondIndex];
-    secondIndex++;
     arrayIndex++;
+    secondIndex++;
   }
 }
 
