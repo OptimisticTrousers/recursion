@@ -16,14 +16,4 @@ function fibs(number) {
   return output;
 }
 
-function fibsRec(number) {
-  if (number === 1) {
-    return 0;
-  } else if (number === 2) {
-    return 1;
-  }
-
-  return fibsRec(number - 1) + fibsRec(number - 2);
-}
-
-console.log(`fibs(8): ${fibsRec(8)}`);
+console.log(`fibs(8): ${fibs(8)}`);
